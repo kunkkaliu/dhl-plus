@@ -1,0 +1,19 @@
+{
+  "name": "dhl-plus",
+  "version": "0.1.0",
+  "description": "cal the sum of a & b",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunkkaliu/dhl-plus.git"
+  },
+  "author": "dhl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kunkkaliu/dhl-plus/issues"
+  },
+  "homepage": "https://github.com/kunkkaliu/dhl-plus#readme"
+}

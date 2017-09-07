@@ -2,9 +2,14 @@
   "name": "dhl-plus",
   "version": "0.1.0",
   "description": "cal the sum of a & b",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "es6": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests --compilers js:babel-core/register",
+    "clean": "rimraf lib",
+    "lint": "eslint src",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/kunkkaliu/dhl-plus/issues"
   },
-  "homepage": "https://github.com/kunkkaliu/dhl-plus#readme"
+  "homepage": "https://github.com/kunkkaliu/dhl-plus#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^3.5.0",
+    "rimraf": "^2.6.1"
+  }
 }

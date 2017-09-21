@@ -1,6 +1,6 @@
 {
   "name": "dhl-plus",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "cal the sum of a & b",
   "main": "lib/index.js",
   "es6": "src/index.js",
